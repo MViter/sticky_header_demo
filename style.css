@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial); 
+body {
+ height: 2000px;
+ margin: 0;
+ background-color: #c7a693;
+}
+.header {
+	background-color: #5e0231;
+ 	font-size: 30px;
+ 	font-family: 'Questrial', sans-serif;
+ 	position: fixed;
+ 	height: 150px;
+ 	width: 100%;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	transition: all 0.4s ease;
+}
+.sticky {
+    font-size: 15px;
+    color: #000000;
+    position: fixed;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    transition: all 0.4s ease;
+  }
+
+  li {
+  	list-style: none;
+  	display: inline-block;
+  	padding-right: 30px;
+  }
+  a {
+  	text-decoration: none;
+  	color: #fff;
+  }
