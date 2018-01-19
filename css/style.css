@@ -1,16 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Questrial); 
 
 body {
-  height: 2000px;
   margin: 0;
+  padding: 0;
+  height: 2000px;
   background-color: #F0F0F0;
+}
+.preheader {
+  margin: 25px;
+  font-size: 16px;
+  font-family: 'Questrial', Arial, sans-serif;
 }
 
 .header {
   background-color: #5e0231;
   font-size: 30px;
-  font-family: 'Questrial', sans-serif;
-  position: fixed;
+  font-family: 'Questrial', Arial, sans-serif;
   height: 150px;
   width: 100%;
   opacity: .9;
@@ -18,7 +23,13 @@ body {
   color: #555;
   line-height: 190%;
   text-transform: uppercase;
-  box-shadow: 0 8px 6px rgba(0,0,0,.25);
+
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -32,6 +43,7 @@ body {
   text-align: center;
   height: 85px;
   width: 100%;
+  box-shadow: 0 8px 6px rgba(0,0,0,.25);
   transition: all 0.4s ease;
 }
 
@@ -62,6 +74,9 @@ body {
   display: none;
 }
 
+h1 {
+  text-transform: uppercase;
+}
 ul {
   list-style: none;
 }
@@ -87,7 +102,11 @@ a:hover,
 @media screen and (max-width: 1024px) {
 
   .header {
-    position: absolute;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
   }
 
   .logo {
