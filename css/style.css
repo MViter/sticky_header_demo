@@ -1,36 +1,134 @@
 @import url(https://fonts.googleapis.com/css?family=Questrial); 
+
 body {
- height: 2000px;
- margin: 0;
- background-color: #c7a693;
+  height: 2000px;
+  margin: 0;
+  background-color: #F0F0F0;
 }
+
 .header {
-	background-color: #5e0231;
- 	font-size: 30px;
- 	font-family: 'Questrial', sans-serif;
- 	position: fixed;
- 	height: 150px;
- 	width: 100%;
- 	text-align: center;
- 	text-transform: uppercase;
- 	transition: all 0.4s ease;
+  background-color: #5e0231;
+  font-size: 30px;
+  font-family: 'Questrial', sans-serif;
+  position: fixed;
+  height: 150px;
+  width: 100%;
+  opacity: .9;
+  top: 0;
+  color: #555;
+  line-height: 190%;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px rgba(0,0,0,.25);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
+
 .sticky {
+  font-size: 15px;
+  color: #000000;
+  position: fixed;
+  text-align: center;
+  height: 85px;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.logo {
+  background: url("../img/logo.png") no-repeat center/80%;
+  float: left;
+  margin: 12px;
+  width: 120px;
+  height: 120px;
+  opacity: .9;
+}
+
+.smallLogo {
+  width: 60px;
+  height: 60px;
+}
+
+.nav {
+  float: right;
+  padding: 35px 20px 0 0;
+}
+
+#menu-icon {
+  background: url(../img/icon.png) center;
+  opacity: .9;
+  width: 40px;
+  height: 36px;
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav ul li {
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 10px;
+  float: left;
+  font-size: 110%;
+}
+
+.nav ul li a {
+  color: #F0F0F0;
+  text-decoration: none;
+}
+
+a:hover,
+.current {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .header {
+    position: absolute;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sticky {
     font-size: 15px;
     color: #000000;
     position: fixed;
     text-align: center;
-    height: 50px;
+    height: 85px;
     width: 100%;
     transition: all 0.4s ease;
   }
 
-  li {
-  	list-style: none;
-  	display: inline-block;
-  	padding-right: 30px;
+  #menu-icon {
+    display: inline-block;
   }
-  a {
-  	text-decoration: none;
-  	color: #fff;
+
+  .nav:hover ul {
+    display: block;
   }
+  
+  .nav ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    background: #5e0231;
+    width: 50%;
+    padding: 20px;
+    right: 20px;
+    top: 60px;
+    border: 1px solid #fff;
+    border-radius: 4px 0 4px 4px;
+  }
+
+  .nav li {
+    text-align: center;
+    width: 100%;
+  }
+  
+}
